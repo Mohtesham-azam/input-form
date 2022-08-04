@@ -1,0 +1,882 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>FORM</title>
+</head>
+<body class="py-5">
+<form>
+<header>
+<div class="container-lg py-3 border border-dark"">
+<div class="text-center">
+<h3 class="d-inline">CENTRAL CKYC REGISTRY | Know Your Customer (KYC) Application Form | Individual</h3>
+<hr>
+</div>
+<div class="pl-3">
+<h4 class="d-inline">IMPORTANT INSTRUCTIONS</h4>
+</div>
+<hr>
+<div class="row mx-auto">
+<ol type="A" class="row">
+<div class="col-lg-6 ps-6">
+<li>Fields marked with '*' are mandatory fields.</li>
+<li>Tick (&#10004) wherever applicable.</li>
+<li>Please fill the form in English and in BLOCK letters.</li>
+<li>Please fill the date in DD-MM-YYYY format.</li>
+<li>For particular section update, please tick (&#10004) in the box section number and strike off the sections not required to be updated.</li>
+</div>
+<div class="col-lg-6 ps-6">
+<li>Please read section wise detailed guidelines/instructions at the end.</li>
+<li>List of State/U.T code as per Indian Motor Vehicle Act, 1988, is available at the end.</li>
+<li>List of two character ISO 3166 country codes is available at the end.</li>
+<li>KYC number of applicant is mandatory for update application.</li>
+<li>The 'OTP-based E-KYC' check box is to be checked for accounts opened using OTP based E-KYC in non face to face mode.</li>
+</div>
+</ol>
+</div>
+</div>
+</header>
+<br>
+<main>
+<!-- for office use -->
+<div class="container-lg py-3 border border-dark" id="ofc_use">
+<h5 class="d-inline">FOR OFFICE ONLY</h5><span> (to be filled by financial institution)</span>
+<hr>
+<div class="row">
+<div class="col-lg-3 d-flex align-items-center">
+<h4>Application Type*</h4>
+</div>
+<div class="col-lg-2">
+<label for="new" class="d-flex flex-row align-items-center pl-4" style="height: 100%; width: 100%;">
+<input type="radio" id="new" name="application" class="form-check-input" required> New
+</label>
+</div>
+<div class="col-lg-2">
+<label for="update" class="d-flex flex-row align-items-center pl-4" style="height: 100%; width: 100%;">
+<input type="radio" id="update" name="application" class="form-check-input" required> Update
+</label>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<h4 class="d-inline">KYC Number</h4>
+<p class="d-inline"> (Mandotary for KYC Update Request)</p>
+</div>
+<div class="col-lg-2">
+<input type="text" id="kyc" class="form-control h-100 text-uppercase">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-3 d-flex align-items-center">
+<h4>Account Type*</h4>
+</div>
+<div class="col-lg-2">
+<label for="normal" class="d-flex flex-row align-items-center pl-4">
+<input type="radio" id="normal" name="account" class="form-check-input" required> Normal
+</label>
+</div>
+<div class="col-lg-2">
+<label for="minor" class="d-flex flex-row align-items-center pl-4">
+<input type="radio" id="minor" name="account" class="form-check-input" required> Minor
+</label>
+</div>
+<div class="col-lg-5">
+<label for="minor" class="d-flex flex-row align-items-center pl-4">
+<input type="radio" id="minor" name="account" class="form-check-input" required> Aadhaar OTP-based e-KYC(in non face to face mode)
+</label>
+</div>
+</div>
+</div>
+<br>
+<!-- personal information -->
+<div class="border border-dark container-lg py-3">
+<div class="pl-3">
+<h3 class="d-inline"> 1. PERSONAL DETAILS</h3>
+<span class="align-text-bottom"> (Please refer to Instruction A at the end)</span>
+</div>
+<hr>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Name</h4>
+<p class="d-inline">* (same as ID proof)</p>
+</div>
+<div class="col-lg-2">
+<input type="text" id="prefix" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="prefix" required>
+</div>
+<div class="col-lg-3">
+<input type="text" id="fname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="first name" required>
+</div>
+<div class="col-lg-2">
+<input type="text" id="mname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="middle name">
+</div>
+<div class="col-lg-2">
+<input type="text" id="lname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="last name">
+</div>
+</div>
+<br>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Maiden Name</h4>
+</div>
+<div class="col-lg-2">
+<input type="text" id="mprefix" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="prefix">
+</div>
+<div class="col-lg-3">
+<input type="text" id="mfname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="first name">
+</div>
+<div class="col-lg-2">
+<input type="text" id="mmname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="middle name">
+</div>
+<div class="col-lg-2">
+<input type="text" id="mlname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="last name">
+</div>
+</div>
+<br>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Father Name</h4>
+</div>
+<div class="col-lg-2">
+<input type="text" id="fprefix" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="prefix">
+</div>
+<div class="col-lg-3">
+<input type="text" id="ffname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="first name">
+</div>
+<div class="col-lg-2">
+<input type="text" id="fmname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="middle name">
+</div>
+<div class="col-lg-2">
+<input type="text" id="flname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="last name">
+</div>
+</div>
+<br>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Mother Name</h4>
+</div>
+<div class="col-lg-2">
+<input type="text" id="moprefix" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="prefix">
+</div>
+<div class="col-lg-3">
+<input type="text" id="mofname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="first name">
+</div>
+<div class="col-lg-2">
+<input type="text" id="momname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="middle name">
+</div>
+<div class="col-lg-2">
+<input type="text" id="molname" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="last name">
+</div>
+</div>
+<br>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Date of Birth*</h4>
+</div>
+<div class="col-lg-2">
+<input type="date" class="form-control form-control-sm" id="dob" onclick="this.showPicker()" required>
+</div>
+</div>
+<br>
+<div class="row mx-auto">
+<div class="col-lg-1">
+<h4 class="d-inline">PAN*</h4>
+</div>
+<div class="col-lg-3">
+<input type="text" id="pan" class="form-control form-control-sm text-uppercase" autocomplete="off" placeholder="pan number" pattern="[A-Za-z]{5}[0-9]{4}[A-Za-z]" title="must contain 5 letters then 4 digits number then a letter." required>
+</div>
+</div>
+<br>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Gender*</h4>
+</div>
+<div class="col-lg-2">
+<label for="male" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="gender" id="male" class="form-check-input" required> Male
+</label>
+</div>
+<div class="col-lg-2">
+<label for="female" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="gender" id="female" class="form-check-input" required> Female
+</label>
+</div>
+<div class="col-lg-5">
+<label for="trans" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="gender" id="trans" class="form-check-input" required> Transgender
+</label>
+</div>
+</div>
+<br>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Marital Status*</h4>
+</div>
+<div class="col-lg-2">
+<label for="married" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="marital" id="married" class="form-check-input" required> Married
+</label>
+</div>
+<div class="col-lg-2">
+<label for="unmarried" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="marital" id="unmarried" class="form-check-input" required> Unmarried
+</label>
+</div>
+<div class="col-lg-5">
+<label for="other" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="marital" id="other" class="form-check-input" required> Others
+</label>
+</div>
+</div>
+<br>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Nationality*</h4>
+</div>
+<div class="col-lg-2">
+<label for="indian" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="nationality" id="indian" class="form-check-input" required> IN-Indian
+</label>
+</div>
+<div class="col-lg-7">
+<label for="others" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="nationality" id="others" class="form-check-input" required> Others(ISO 3166 Country Code)
+</label>
+</div>
+</div>
+<br>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Residental Status*</h4>
+</div>
+<div class="col-lg-2">
+<label for="ri" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="resident" id="ri" class="form-check-input" required> Resident Individual
+</label>
+</div>
+<div class="col-lg-2">
+<label for="nri" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="resident" id="nri" class="form-check-input" required> Non Resident Indian
+</label>
+</div>
+<div class="col-lg-2">
+<label for="fn" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="resident" id="fn" class="form-check-input" required> Foreign National
+</label>
+</div>
+<div class="col-lg-3">
+<label for="pio" class="d-flex flex-row align-items-center ml-3">
+<input type="radio" name="resident" id="pio" class="form-check-input" required> Person of Indian Origin
+</label>
+</div>
+</div>
+</div>
+<br>
+<!-- proof of identity & address -->
+<div class="border border-dark container-lg py-3" id="pia">
+<div class="pl-3">
+<h3 class="d-inline"> 2. PROOF OF IDENTITY AND ADDRESS*</h3>
+<span class="align-text-bottom"> (Please refer to Instruction B at the end)</span>
+</div>
+<hr>
+<div class="row mx-auto px-4">
+<div class="chk">
+<div class="row">
+<div class="d-flex">
+<p class="d-inline pl-3">l.</p>
+<p class="d-inline pl-4">Certified copy of OVD or equivalent e-document of OVD or OVD obtained through digital KYC process needs to be submitted (any one of the following OVDs)</p>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="pn">
+<input type="radio" id="pn" name="OVD" class="form-check-input" required>
+<h5 class="d-inline">A. Passport Number</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="psprt" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="[A-Za-z][0-9]{7}" title="must contain a letter then 7 digit number">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="vc">
+<input type="radio" id="vc" name="OVD" class="form-check-input" required>
+<h5 class="d-inline">B. Voter ID Card</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="vic" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="[A-Za-z]{3}[0-9]{7}" title="must contain 3 letters then 7 digit number">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="dlc">
+<input type="radio" id="dlc" name="OVD" class="form-check-input" required>
+<h5 class="d-inline">C. Driving Licence</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="dl" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="(([A-Za-z]{2}[0-9]{2}\s)|([A-Za-z]{2}-[0-9]{2}))(19|20)[0-9]{9}" title="must contain 2 letter, 2 digit, a space & 19/20 then 9 digit or 2 letter, a hyphen, 2 digit, & 19/20 then 9 digit">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="njcc">
+<input type="radio" id="njcc" name="OVD" class="form-check-input" required>
+<h5 class="d-inline">D. NREGA Job Card</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="njc" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="nprc">
+<input type="radio" id="nprc" name="OVD" class="form-check-input" required>
+<h5 class="d-inline">E. National Population Register Letter</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="npr" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="ppa">
+<input type="radio" id="ppa" name="OVD" class="form-check-input" required>
+<h5 class="d-inline">F. Proof of Possession of Aadhaar</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="adhr" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}" title="must contain 12 digit number seperated by space after every 4 digit">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7">
+<p class="d-inline">ll.</p>
+<label for="eka" class="pl-4">
+<input type="radio" name="OVD" id="eka" class="form-check-input" required>
+<h5 class="d-inline">E-KYC Authentication</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="e-kyc" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7">
+<p class="d-inline">lll.</p>
+<label for="ova" class="pl-4">
+<input type="radio" name="OVD" id="ova" class="form-check-input" required>
+<h5 class="d-inline">Offline Verification of Aadhaar</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="verification" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}" title="must contain 12 digit number seperated by space after every 4 digit">
+</div>
+</div>
+</div>
+</div>
+<div class="row px-4">
+<div class="col-lg-7">
+<h4 class="d-inline">PHOTO*</h4>
+</div>
+<div class="pl-3 col-lg-5">
+<input type="file" id="file1" accept="image/*" class="form-control form-control-sm border-0" required>
+</div>
+<br>
+</div>
+<hr>
+<div class="pl-4">
+<h4 class="d-inline">ADDRESS</h4>
+</div>
+<hr>
+<div class="row mx-auto">
+<div class="col-lg-1 pl-4">
+<h6 class="d-inline">Line 1*</h6>
+</div>
+<div class="col-lg-11">
+<input type="text" id="add1" class="form-control form-control-sm text-uppercase" autocomplete="off" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-1 pl-4">
+<h6 class="d-inline">Line 2</h6>
+</div>
+<div class="col-lg-11">
+<input type="text" id="add2" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-1 pl-4">
+<h6 class="d-inline">Line 3</h6>
+</div>
+<div class="col-lg-11">
+<input type="text" id="add3" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">City/Town/Village*</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="city1" class="form-control form-control-sm text-uppercase" autocomplete="off" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">District*</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="dist1" class="form-control form-control-sm text-uppercase" autocomplete="off" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">Pin/Post Code*</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="pin1" class="form-control form-control-sm" autocomplete="off" pattern="[0-9]{6}" title="must contain 6 digit number" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">State/U.T. Code*</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="state1" class="form-control form-control-sm text-uppercase" autocomplete="off" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">ISO 3166 Country Code</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="iso1" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+</div>
+<br>
+<!-- current address details -->
+<div class="border border-dark container-lg py-3" id="crnt_add">
+<div class="pl-3">
+<h3 class="d-inline"> 3. CURRENT ADDRESS DETAILS</h3>
+<span class="align-text-bottom"> (Please refer to Instruction B at the end)</span>
+</div>
+<hr>
+<div class="d-flex pl-5">
+<label for="same">
+<input type="checkbox" id="same" class="form-check-input">
+<span class="align-text-bottom ps-4">Same as above mentioned address (In such cases, address details as below need not be provided)</span>
+</label>
+</div>
+<div class="row mx-auto px-4">
+<div class="chk1">
+<div class="row">
+<div class="d-flex">
+<p class="d-inline pl-3">l.</p>
+<p class="d-inline pl-4">Certified copy of OVD or equivalent e-document of OVD or OVD obtained through digital KYC process needs to be submitted (any one of the following OVDs)</p>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="pn1">
+<input type="radio" id="pn1" name="OVDs" class="form-check-input">
+<h5 class="d-inline">A. Passport Number</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="psprt1" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="[A-Za-z][0-9]{7}" title="must contain a letter then 7 digit number">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="vc1">
+<input type="radio" id="vc1" name="OVDs" class="form-check-input">
+<h5 class="d-inline">B. Voter ID Card</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="vic1" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="[A-Za-z]{3}[0-9]{7}" title="must contain 3 letters then 7 digit number">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="dlc1">
+<input type="radio" id="dlc1" name="OVDs" class="form-check-input">
+<h5 class="d-inline">C. Driving Licence</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="dl1" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="(([A-Za-z]{2}[0-9]{2}\s)|([A-Za-z]{2}-[0-9]{2}))(19|20)[0-9]{9}" title="must contain 2 letter, 2 digit, a space & 19/20 then 9 digit or 2 letter, a hyphen, 2 digit, & 19/20 then 9 digit">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="njcc1">
+<input type="radio" id="njcc1" name="OVDs" class="form-check-input">
+<h5 class="d-inline">D. NREGA Job Card</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="njc1" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="nprc1">
+<input type="radio" id="nprc1" name="OVDs" class="form-check-input">
+<h5 class="d-inline">E. National Population Register Letter</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="npr1" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7 pl-5">
+<label for="ppa1">
+<input type="radio" id="ppa1" name="OVDs" class="form-check-input">
+<h5 class="d-inline">F. Proof of Possession of Aadhaar</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="adhr1" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}" title="must contain 12 digit number seperated by space after every 4 digit">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7">
+<p class="d-inline">ll.</p>
+<label for="eka1" class="pl-4">
+<input type="radio" name="OVDs" id="eka1" class="form-check-input">
+<h5 class="d-inline">E-KYC Authentication</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="e-kyc1" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7">
+<p class="d-inline">lll.</p>
+<label for="ova1" class="pl-4">
+<input type="radio" name="OVDs" id="ova1" class="form-check-input">
+<h5 class="d-inline">Offline Verification of Aadhaar</h5>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="verification1" class="form-control form-control-sm text-uppercase" autocomplete="off" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}" title="must contain 12 digit number seperated by space after every 4 digit">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-7">
+<p class="d-inline">lV.</p>
+<label for="dpa1" class="pl-4">
+<input type="radio" name="OVDs" id="dpa1" class="form-check-input">
+<h5 class="d-inline">Deemed Proof of Address</h5>
+<p class="d-inline"> - Document Type Code</p>
+</label>
+</div>
+<div class="col-lg-5">
+<input type="text" id="dpa" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="pl-4">
+<h4 class="d-inline">ADDRESS</h4>
+</div>
+<hr>
+<div class="row mx-auto">
+<div class="col-lg-1 pl-4">
+<h6 class="d-inline">Line 1*</h6>
+</div>
+<div class="col-lg-11">
+<input type="text" id="cadd1" class="form-control form-control-sm text-uppercase" autocomplete="off" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-1 pl-4">
+<h6 class="d-inline">Line 2</h6>
+</div>
+<div class="col-lg-11">
+<input type="text" id="cadd2" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-1 pl-4">
+<h6 class="d-inline">Line 3</h6>
+</div>
+<div class="col-lg-11">
+<input type="text" id="cadd3" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">City/Town/Village*</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="ccity1" class="form-control form-control-sm text-uppercase" autocomplete="off" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">District*</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="cdist1" class="form-control form-control-sm text-uppercase" autocomplete="off" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">Pin/Post Code*</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="cpin1" class="form-control form-control-sm" autocomplete="off" pattern="[0-9]{6}" title="must contain 6 digit number" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">State/U.T. Code*</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="cstate1" class="form-control form-control-sm text-uppercase" autocomplete="off" required>
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-4 pl-4">
+<h6 class="d-inline">ISO 3166 Country Code</h6>
+</div>
+<div class="col-lg-8">
+<input type="text" id="ciso1" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+</div>
+<br>
+<!-- contact details -->
+<div class="border border-dark container-lg py-3">
+<div class="pl-3">
+<h3 class="d-inline"> 4. CONTACT DETAILS</h3>
+<span class="align-text-bottom">  (All communications will be sent to Mobile number/Email ID provided) (Please refer to Instruction C at the end)</span>
+</div>
+<hr>
+<div class="row mx-auto">
+<div class="col-lg-2">
+<h5 class="d-inline">Tel. (Off)</h5>
+</div>
+<div class="col-lg-4">
+<input type="tel" id="off" class="form-control form-control-sm" autocomplete="off" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" title="must contain 3 number then a hyphen (-) then 8 digit number seperated by a hyphen (-) after every 4 digit">
+</div>
+<div class="col-lg-2">
+<h5 class="d-inline">Tel. (Res)</h5>
+</div>
+<div class="col-lg-4">
+<input type="tel" id="res" class="form-control form-control-sm" autocomplete="off" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" title="must contain 3 number then a hyphen (-) then 8 digit number seperated by a hyphen (-) after every 4 digit">
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-2">
+<h5 class="d-inline">Mobile</h5>
+</div>
+<div class="col-lg-4">
+<input type="text" id="mob" class="form-control form-control-sm" autocomplete="off" pattern="[0-9]{10}" title="must contain 10 digit number">
+</div>
+<div class="col-lg-2">
+<h5 class="d-inline">Email ID</h5>
+</div>
+<div class="col-lg-4">
+<input type="email" id="email" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+</div>
+<br>
+<!-- remark -->
+<div class="border border-dark container-lg py-3">
+<div class="pl-3">
+<h3 class="d-inline"> 5. REMARKS</h3>
+<span class="align-text-bottom">  (if any)</span>
+</div>
+<hr>
+<div>
+<textarea rows=5 id="remark" class="form-control form-control-sm text-uppercase" autocomplete="off"></textarea>
+</div>
+</div>
+<br>
+<!-- application declaration -->
+<div class="border border-dark container-lg py-3">
+<div class="pl-3">
+<h3 class="d-inline"> 6. APPLICATION DECLARATION</h3>
+</div>
+<hr>
+<div>
+<ul>
+<li>
+<p>I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief and I 
+undertake to inform you of any changes therein, immediately. In case any of the above information is found to be 
+false or untrue or misleading or misrepresenting, I am aware that I may be held liable for it.
+</p>
+</li>
+<li>
+<p>I hereby consent to receiving information from Central KYC Registry through SMS/Email on the above registered 
+number/email address.
+</p>
+</li>
+</ul>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">Place</h4>
+</div>
+<div class="col-lg-9">
+<input type="text" id="place" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row mx-auto">
+<div class="col-lg-3">
+<h4 class="d-inline">SIGNATURE(S2)</h4>
+</div>
+<div class="col-lg-9">
+<input type="file" id="file2" accept="image/*" class="form-control form-control-sm border-0">
+</div>
+</div>
+</div>
+<br>
+<!-- attestation -->
+<div class="border border-dark container-lg py-3">
+<div class="pl-3">
+<h3 class="d-inline"> 7. ATTESTATION/FOR OFFICE USE ONLY</h3>
+</div>
+<hr>
+<div class="row mx-auto pl-3">
+<h4>Document Received</h4>
+<div class="pl-3 col-lg-12">
+<label for="cc" class="d-flex flex-row align-items-center">
+<input type="radio" id="cc" class="form-check-input" name="doc"> Certified Copies
+</label>
+</div>
+<div class="pl-3 col-lg-12">
+<label for="uidai" class="d-flex flex-row align-items-center">
+<input type="radio" id="uidai" class="form-check-input" name="doc"> E-KYC data received from UIDAI
+</label>
+</div>
+<div class="pl-3 col-lg-12">
+<label for="ov" class="d-flex flex-row align-items-center">
+<input type="radio" id="ov" class="form-check-input" name="doc"> Data received from offline verification
+</label>
+</div>
+<div class="pl-3 col-lg-12">
+<label for="dkp" class="d-flex flex-row align-items-center">
+<input type="radio" id="dkp" class="form-check-input" name="doc"> Digital KYC Process
+</label>
+</div>
+<div class="pl-3 col-lg-12">
+<label for="ed" class="d-flex flex-row align-items-center">
+<input type="radio" id="ed" class="form-check-input" name="doc"> Equivalent e-document
+</label>
+</div>
+<div class="pl-3 col-lg-12">
+<label for="vb" class="d-flex flex-row align-items-center">
+<input type="radio" id="vb" class="form-check-input" name="doc"> Video based KYC
+</label>
+</div>
+</div>
+<div class="pl-3">
+<h4 class="d-inline">IPV Done</h4> on
+<input type="date" id="ipv" class="border-0" onclick="this.showPicker()">
+</div>
+<div class="mx-auto pl-3">
+<div class="">
+<h4 class="d-inline">KYC VERIFICATION CARRIED OUT BY</h4>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-5">
+<h6 class="d-inline">Date</h6>
+</div>
+<div class="col-lg-7">
+<input type="date" id="date" class="form-control form-control-sm" onclick="this.showPicker()">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-5">
+<h6 class="d-inline">Emp. Name</h6>
+</div>
+<div class="col-lg-7">
+<input type="text" id="emp-name" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-5">
+<h6 class="d-inline">Emp. Code</h6>
+</div>
+<div class="col-lg-7">
+<input type="text" id="emp-code" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-5">
+<h6 class="d-inline">Emp. Designation</h6>
+</div>
+<div class="col-lg-7">
+<input type="text" id="emp-desig" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-5">
+<h6 class="d-inline">Emp. Branch</h6>
+</div>
+<div class="col-lg-7">
+<input type="text" id="emp-branch" class="form-control form-control-sm text-uppercase" autocomplete="off">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-5">
+<h4>Employee Signature</h4>
+</div>
+<div class="col-lg-7">
+<input type="file" id="file3" accept="image/*" class="form-control form-control-sm border-0">
+</div>
+</div>
+</div>
+<hr>
+<div class="mx-auto pl-3">
+<div class="">
+<h4 class="d-inline">INSTITUTION DETAILS</h4>
+</div>
+<hr>
+<div class="row">
+<div class="col-lg-5">
+<h6 class="d-inline">Name</h6>
+</div>
+<div class="col-lg-7">Shriram Insight Share Brokers Ltd.</div>
+</div>
+<div class="row">
+<div class="col-lg-5">
+<h6 class="d-inline">Code</h6>
+</div>
+<div class="col-lg-7">IN0349</div>
+</div>
+<div class="row">
+<div class="col-lg-5">
+<h4>Institution Stamp</h4>
+</div>
+<div class="col-lg-7">
+<input type="file" id="file4" accept="image/*" class="form-control form-control-sm border-0">
+</div>
+</div>
+</div>
+</div>
+</main>
+<br>
+<div class="d-flex justify-content-center">
+<input type="submit" id="submit" onclick="handleSubmit()"><a href="output.html"></a>
+</div>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
